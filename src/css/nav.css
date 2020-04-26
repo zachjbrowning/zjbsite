@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto&display=swap');
+.nav-holder {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    position:fixed;
+    top:0;
+}
+.tint {
+    color:#763CA0;
+}
+.tint:hover, .nav-link:hover {
+    color:#E65c20 !important;
+}
+.burger-tint {
+    stroke: #403d39;
+}
+.navbar-toggler:hover .burger-tint, button:focus {
+    stroke:#E65c20;
+    outline:none;
+}
+.navbar-toggler {
+    border: none !important;
+}
+.nav-item {
+    padding-right: 10px;
+}
+.logo {
+    fill:none;
+    stroke:#763CA0;
+    stroke-width:50;
+    stroke-miterlimit:10;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.logo-brand-holder {
+    position:relative;
+    width:70%;
+    height:0;
+    padding-top:70%;
+}
+.name-brand, .nav-link {
+    font-family: "Noto Sans JP", sans-serif;
+    color:#403d39 !important;
+    font-size:23px;
+}
+.navbar-brand:hover .logo {
+    animation: rotate 4s infinite linear;
+    stroke:#E65c20;
+}
+.navbar-brand {
+    padding-right:35px;
+}
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

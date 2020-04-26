@@ -1,0 +1,28 @@
+html, body {
+    height:100%;
+    width:100%;
+    background-color: #d3d3d3;
+}
+.check {
+    background-color:red;
+}
+.main-holder {
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main-hover {
+    color: #403d39;
+}
+.main-hover:hover {
+    color:#E65c20;
+}
+.constrict {
+    max-width:800px;
+    width:100%;
+}
+.main-frame {
+    height:100vh;
+    padding-top:60px;
+}
