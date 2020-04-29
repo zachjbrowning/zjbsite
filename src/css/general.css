@@ -2,16 +2,12 @@ html, body {
     height:100%;
     width:100%;
     background-color: #d3d3d3;
+    overflow-x: hidden;
 }
 .check {
     background-color:red;
 }
-.main-holder {
-    width:100%;
-    display:flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
+
 .main-hover {
     color: #403d39;
 }
@@ -19,10 +15,22 @@ html, body {
     color:#E65c20;
 }
 .constrict {
-    max-width:800px;
+    max-width:1050px;
     width:100%;
+    display:flex;
+    justify-self: center;
+}
+.main-holder {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
 }
 .main-frame {
-    height:100vh;
-    padding-top:60px;
+    min-height:100vh;
+    width:100vw;
+    padding-top:77px;
+    justify-content:center;
+    display:flex;
+    justify-content: center;
 }

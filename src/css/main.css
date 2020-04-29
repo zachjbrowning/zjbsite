@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.welcome {
+    font-weight:bold;
+    font-size:6vmin;
+    padding-left:10px;
+    padding-right:10px;
+}
+#welcome-more {
+    font-weight:bold;
+    position:absolute;
+    bottom:-7vmin;
+    font-size:15px;
+    color:#424241;
+    
+}
+#arrow {
+    position:absolute;
+    bottom:-10vmin;
+    width:2vmin;
+    height:5vmin;
+    padding-top:2vmin;
+    margin:0 auto;
+    
+}
+.welcome-box {
+    padding-bottom:10vmin;
+    position:relative;
+    justify-content: center;
+}
+.flave, .inverse-flave:hover {
+    color:#E65c20;
+}
+.flave:hover, .inverse-flave {
+    color:#763CA0;
+}
+
+
+.logo-holder, .welcome-frame, .histo-holder {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+}
+.main-logo-title {
+    position:absolute;
+    top:0;
+    padding-top:77px;
+}
+.logo-box {
+    position:relative;
+    width:40vmin;
+    height:0;
+    padding-top:40vmin;
+}
+.rotate-down {
+    stroke: #E65c20;
+}
+.rotate-up {
+    stroke:#763CA0;
+}
+
+
+
+.anime-box {
+    position:relative;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    color:#E65c20;
+    font-size:8vmin;
+    font-family:'Bebas Neue';
+    font-style: italic;
+}
+.anime-up, .anime-down {
+    position:absolute;
+    rotate: -10deg;
+}
+.anime-up {
+    top:calc(45vh - 4vmin);
+}
+.anime-down {
+    top:calc(45vh + 4vmin);
+}
+.anime-frame {
+    background-color:#424241;
+}
+
+.histo-holder {
+    width:100%;
+    overflow:hidden;
+    align-items: center;
+    justify-content:center;
+}
+#histo-mask {
+    width:50vmin;
+    height:50vmin;
+    position:absolute;
+    justify-self: center;
+    align-self: center;
+    box-shadow: 0 0 0 200vmax rgb(168, 168, 159);
+    border-radius:50%;
+}
+#histo-parallax {
+    
+    width:50vmin;
+    height:50vmin;
+}
+#trial {
+    width:50vmin;
+    height:50vmin;
+}

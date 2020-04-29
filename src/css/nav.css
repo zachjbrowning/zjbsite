@@ -5,6 +5,10 @@
     justify-content: center;
     position:fixed;
     top:0;
+    background-color:#d3d3d3;
+}
+.shadow {
+    box-shadow: 0 1px 20px #fff;
 }
 .tint {
     color:#763CA0;
@@ -27,7 +31,6 @@
 }
 .logo {
     fill:none;
-    stroke:#763CA0;
     stroke-width:50;
     stroke-miterlimit:10;
     position:absolute;
@@ -43,7 +46,7 @@
 .name-brand, .nav-link {
     font-family: "Noto Sans JP", sans-serif;
     color:#403d39 !important;
-    font-size:23px;
+    font-size:30px;
 }
 .navbar-brand:hover .logo {
     animation: rotate 4s infinite linear;
@@ -51,6 +54,7 @@
 }
 .navbar-brand {
     padding-right:35px;
+    stroke: #763CA0;
 }
 @keyframes rotate {
     from {

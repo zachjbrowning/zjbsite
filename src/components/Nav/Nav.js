@@ -5,21 +5,33 @@ import '../../css/nav.css';
 import NavItem from './Navitem'
 
 class Nav extends Component {
+    componentDidMount() {
+        document.body.addEventListener('scroll', this.shadowScroll)
+    }
+    
+    shadowScroll() {
+        if (document.body.scrollTop > 60) {
+            document.getElementById('navholder').classList.add('shadow')
+        } else {
+            document.getElementById('navholder').classList.remove('shadow')
+        }
+    }
+
     render() {
         return (
-            <div class="nav-holder">
-                <nav class="navbar navbar-expand-sm navbar-light constrict">
-                    <Link class="mr-auto navbar-brand" to="/">
-                        <div class="logo-brand-holder d-inline-block align-bottom">
+            <div id="navholder" className="nav-holder">
+                <nav className="navbar navbar-expand-sm navbar-light constrict">
+                    <Link className="mr-auto navbar-brand" to="/">
+                        <div className="logo-brand-holder d-inline-block align-bottom">
                             <Logo/>
                         </div>{' '}
-                        <span class="name-brand">ZJB</span>
+                        <span className="name-brand">ZJB</span>
                     </Link> 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navo" aria-controls="navo" aria-expanded="false" aria-label="Toggle navigation">
-                        <svg width='30' height='30' viewBox='0 0 30 30'><path className="burger-tint" stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navo" aria-controls="navo" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg width='30' height='30' viewBox='0 0 30 30'><path className="burger-tint" strokeMiterlimit='10' strokeWidth='2' d='M4 7h22M4 15h22M4 23h22'/></svg>
                     </button>
-                    <div class="collapse navbar-collapse" id="navo">
-                        <ul class="navbar-nav ml-auto">
+                    <div className="collapse navbar-collapse" id="navo">
+                        <ul className="navbar-nav ml-auto">
                             <NavItem name="Projects" addr="projects"/>
                             <NavItem name="Contact" addr="contact"/>
                         </ul>
