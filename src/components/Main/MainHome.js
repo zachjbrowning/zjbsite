@@ -14,11 +14,13 @@ export default function MainHome() {
     useEffect(() => {
         const animeDiff = scroll - document.getElementById("animeFrame").getBoundingClientRect().top
         const histoDiff = scroll - document.getElementById("histoFrame").getBoundingClientRect().top
+        const sine = Math.sin(Math.PI / 18)
         document.body.addEventListener("scroll", () => {
             if (window.location.pathname === '/') {
                 setScroll(document.body.scrollTop)
-                document.getElementById("animeDown").style.transform = "translateX(" + (animeDiff - scroll) + "px)"
-                document.getElementById("animeUp").style.transform = "translateX(" + (-(animeDiff - scroll)) + "px)"
+                let newchange = animeDiff - scroll
+                document.getElementById("animeDown").style.transform = "translate(" + newchange + "px," + (-newchange * sine) + "px) rotate(-10deg)"
+                document.getElementById("animeUp").style.transform = "translate(" + (-newchange) + "px," + (newchange * sine) + "px) rotate(-10deg)"
                 let newlength = histoDiff - scroll
                 document.getElementById("H0").style.transform = "translateY(" + (-newlength/20) + "px)" 
                 document.getElementById("H1").style.transform = "translateY(" + (-newlength/18) + "px)" 

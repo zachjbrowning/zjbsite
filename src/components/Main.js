@@ -7,6 +7,10 @@ import MainHome from './Main/MainHome'
 
 class Main extends Component {
     
+    componentDidMount() {
+        document.getElementById("loading-screen").style.display="none"
+    }
+
     render() {
         return (
             <div>

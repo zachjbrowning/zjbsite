@@ -3,8 +3,8 @@
 .welcome {
     font-weight:bold;
     font-size:calc((6vmin + 6vmax) / 2);
-    padding-left:10px;
-    padding-right:10px;
+    padding-left:3vmin;
+    padding-right:3vmin;
 }
 #welcome-more {
     font-weight:bold;
@@ -73,7 +73,7 @@
 }
 .anime-up, .anime-down {
     position:absolute;
-    rotate: -10deg;
+    transform: rotate(-10deg)
 }
 .anime-up {
     top:calc(45vh - 4vmin);
