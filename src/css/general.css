@@ -18,7 +18,8 @@ html, body {
     max-width:1050px;
     width:100%;
     display:flex;
-    justify-self: center;
+    justify-content: center;
+    position:relative
 }
 .main-holder {
     width:100%;
@@ -27,7 +28,7 @@ html, body {
     flex-wrap: wrap;
 }
 .main-frame {
-    min-height:100vh;
+    min-height:max(100vh, 300px);
     width:100vw;
     padding-top:77px;
     justify-content:center;

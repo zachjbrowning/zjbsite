@@ -2,21 +2,21 @@
 
 .welcome {
     font-weight:bold;
-    font-size:6vmin;
+    font-size:calc((6vmin + 6vmax) / 2);
     padding-left:10px;
     padding-right:10px;
 }
 #welcome-more {
     font-weight:bold;
     position:absolute;
-    bottom:-7vmin;
+    bottom:0;
     font-size:15px;
     color:#424241;
     
 }
 #arrow {
     position:absolute;
-    bottom:-10vmin;
+    bottom:-4vmin;
     width:2vmin;
     height:5vmin;
     padding-top:2vmin;
@@ -24,9 +24,9 @@
     
 }
 .welcome-box {
-    padding-bottom:10vmin;
     position:relative;
     justify-content: center;
+    padding-bottom:10vmin;
 }
 .flave, .inverse-flave:hover {
     color:#E65c20;
@@ -45,7 +45,6 @@
 .main-logo-title {
     position:absolute;
     top:0;
-    padding-top:77px;
 }
 .logo-box {
     position:relative;
@@ -86,27 +85,53 @@
     background-color:#424241;
 }
 
-.histo-holder {
+.histo-holder, .resume-box, .end-title, .projects-title {
     width:100%;
     overflow:hidden;
     align-items: center;
     justify-content:center;
 }
-#histo-mask {
+#histo-mask, #histo-mask-shadow {
     width:50vmin;
     height:50vmin;
     position:absolute;
     justify-self: center;
     align-self: center;
-    box-shadow: 0 0 0 200vmax rgb(168, 168, 159);
     border-radius:50%;
 }
+#histo-mask {
+    box-shadow: 0 0 0 200vmax #aaaaaa;
+}
+#histo-mask-shadow {
+    box-shadow: 0 0 10px 10px #424241;
+}
 #histo-parallax {
-    
+    position:absolute;  
     width:50vmin;
-    height:50vmin;
+    height:100vmin;
+    justify-self: center;
+    align-self: center;
 }
 #trial {
-    width:50vmin;
-    height:50vmin;
+    width:100%;
+    
+}
+.histo-untitle, #resume-untitle {
+    position:absolute;
+    bottom:4vmin;
+    font-weight:bold;
+    font-size:calc((3vmin + 3vmax) / 2);
+    padding-left:10px;
+    padding-right:10px;
+}
+.histo-title, #resume-title {
+    position:absolute;
+    top:0;
+}
+.linkage:hover, #histo-mask-shadow {
+    cursor:pointer;
+    text-decoration: none;
+}
+#histoFrame, #logoFrame {
+    background-color: #aaaaaa
 }
