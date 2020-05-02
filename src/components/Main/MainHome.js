@@ -12,11 +12,13 @@ export default function MainHome() {
     const [scroll, setScroll] = useState(document.body.scrollTop)
     
     useEffect(() => {
-        const animeDiff = scroll - document.getElementById("animeFrame").getBoundingClientRect().top
-        const histoDiff = scroll - document.getElementById("histoFrame").getBoundingClientRect().top
-        const sine = Math.sin(Math.PI / 18)
+        document.body.scrollTo(0,0)
+        
         document.body.addEventListener("scroll", () => {
             if (window.location.pathname === '/') {
+                const animeDiff = scroll - document.getElementById("animeFrame").getBoundingClientRect().top
+                const histoDiff = scroll - document.getElementById("histoFrame").getBoundingClientRect().top
+                const sine = Math.sin(Math.PI / 18)
                 setScroll(document.body.scrollTop)
                 let newchange = animeDiff - scroll
                 document.getElementById("animeDown").style.transform = "translate(" + newchange + "px," + (-newchange * sine) + "px) rotate(-10deg)"
@@ -28,12 +30,12 @@ export default function MainHome() {
                 document.getElementById("H3").style.transform = "translateY(" + (-newlength/7) + "px)" 
                 document.getElementById("H4").style.transform = "translateY(" + (-newlength/6) + "px)" 
                 document.getElementById("H5").style.transform = "translateY(" + (-newlength/5) + "px)"
-                document.getElementById("kite").style.transform = "rotate(" + scroll / 5 + "deg)";
+                document.getElementById("kite").style.transform = "rotate(" + newlength / 5 + "deg)";
             }
         })
-    })
+    }, [])
     return (
-        <div>
+        <div id="Main">
             <div className="main-frame welcome-frame">
                 <MainWelcome/>
             </div>

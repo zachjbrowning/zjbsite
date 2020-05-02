@@ -3,6 +3,7 @@ html, body {
     width:100%;
     background-color: #d3d3d3;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 .check {
     background-color:red;
@@ -34,15 +35,5 @@ html, body {
     justify-content:center;
     display:flex;
     justify-content: center;
-}
-
-
-@keyframes lazyload {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(359deg);
-    }
 }
 

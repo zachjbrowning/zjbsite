@@ -19,12 +19,12 @@ class Main extends Component {
                         <MainHome/>
                     )}/>
                     <Route path="/contact" render={() => (
-                        <div className="constrict main-frame">
+                        <div id="Contact" className="constrict main-frame">
                             <ContactHome/>
                         </div>
                     )}/>
                     <Route path="/projects" render={() => (
-                        <div className="constrict main-frame">
+                        <div id="Projects" className="constrict main-frame">
                             <ProjectHome/>
                         </div>
                     )}/>

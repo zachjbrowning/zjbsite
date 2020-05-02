@@ -21,7 +21,7 @@ class Nav extends Component {
         return (
             <div id="navholder" className="nav-holder">
                 <nav className="navbar navbar-expand-sm navbar-light constrict">
-                    <Link className="mr-auto navbar-brand" to="/">
+                    <Link onClick={() => {window.location.href="#Main"}} className="mr-auto navbar-brand" to="/">
                         <div className="logo-brand-holder d-inline-block align-bottom">
                             <Logo/>
                         </div>{' '}
