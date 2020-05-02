@@ -1,0 +1,44 @@
+@import "./contact.css";
+@import "./projects.css";
+@import "./main.css";
+@import "./nav.css";
+
+html, body {
+    height:100%;
+    width:100%;
+    background-color: #d3d3d3;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.check {
+    background-color:red;
+}
+
+.main-hover {
+    color: #403d39;
+}
+.main-hover:hover {
+    color:#E65c20;
+}
+.constrict {
+    max-width:1050px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    position:relative
+}
+.main-holder {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+.main-frame {
+    min-height:max(100vh, 300px);
+    width:100vw;
+    padding-top:77px;
+    justify-content:center;
+    display:flex;
+    justify-content: center;
+}
+
