@@ -28,13 +28,13 @@ export default function MainHisto() {
             </div>
             <div id="histo-mask">
             </div>
-            <div id="histo-mask-shadow">
-            </div>
+            <a id="histo-mask-shadow" href="/oldsite">
+            </a>
             <div className="histo-title welcome">
                 history...
             </div>
             <div className="histo-untitle">
-                (<span className="inverse-flave linkage">version 1.0</span> of the site was a lot different!)
+                (<a className="inverse-flave linkage" href="/oldsite">version 1.0</a> of the site was a lot different!)
             </div>
         </div>
     )

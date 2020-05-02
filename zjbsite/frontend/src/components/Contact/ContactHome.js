@@ -6,7 +6,6 @@ class ContactHome extends Component {
         document.body.scrollTo(0,0)
     }
     submitForm(event) {
-        event.preventDefault();
         const name = event.target.elements.name.value 
         const email = event.target.elements.email.value
         const phone = event.target.elements.phone.value
@@ -23,7 +22,7 @@ class ContactHome extends Component {
                     Fill out the form below if you want to get in contact with me!
                     <br/>
                     <br/>
-                    <form className="contact-form" onSubmit={this.submitForm}>
+                    <form className="contact-form" action="/contact" method="post" onSubmit={this.submitForm}>
                         <input type="text" required={true} placeholder="name" name="name"/>
                         <input type="text" required={true} placeholder="email" name="email"/>
                         <input type="text" placeholder="phone" name="phone"/>
