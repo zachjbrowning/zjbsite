@@ -11,6 +11,7 @@ class ProjectHome extends Component {
     }
     componentDidMount() {
         document.body.scrollTo(0,0);
+        document.getElementById("navo").classList.remove('show');
     }
     render() {
         let alternate = true;

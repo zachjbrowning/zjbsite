@@ -10,6 +10,7 @@ class ContactHome extends Component {
     
     componentDidMount() {
         document.body.scrollTo(0,0)
+        document.getElementById("navo").classList.remove('show')
     }
     submitForm(event) {
         event.preventDefault();
