@@ -48,6 +48,9 @@
     justify-content: center;
     align-items: center;
     stroke:#E65c20;
+    
+}
+#loading {
     animation-name:rotate;
     animation-duration:5s;
     animation-iteration-count:infinite;

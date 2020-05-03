@@ -1,19 +1,14 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import Contact
+from django.views.decorators.csrf import ensure_csrf_cookie
 # Create your views here.
+@ensure_csrf_cookie
 def index(request):
     if request.method == 'POST':
-        newting = Contact(name=request.POST['name'], email=request.POST['email'], phone=request.POST['phone'], message=request.POST['message'])
-        newting.save()
+        print(request.POST['name'], request.POST['message'])
+        return JsonResponse({'HEY':'NRUTHAA'})
     return render(request, 'frontend/index.html')
 
 def old(request):
     return render(request, 'old.html')
-
-    if request.method == 'POST':
-        form = RequestForm(request.POST)
-        if form.is_valid():
-            msg = form.cleaned_data['msg']
-            req = Post(owner=request.user, msg=msg)
-            req.save()
-            return redirect('my-requests')
