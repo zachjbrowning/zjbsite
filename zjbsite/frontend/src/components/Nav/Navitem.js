@@ -4,7 +4,7 @@ class NavItem extends Component {
     render() {
         return (
             <li className="nav-item">
-                <Link className="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" onClick={() => {window.location.href="#"+this.props.name}} to={"/" + this.props.addr}>{this.props.name}</Link>
+                <Link className="nav-link" onClick={() => {window.location.href="#"+this.props.name}} to={"/" + this.props.addr}>{this.props.name}</Link>
             </li>
         )
     }

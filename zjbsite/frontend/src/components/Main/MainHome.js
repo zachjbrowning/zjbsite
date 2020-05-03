@@ -12,7 +12,6 @@ export default function MainHome() {
     
     useEffect(() => {
         document.body.scrollTo(0,0)
-        
         document.body.addEventListener("scroll", () => {
             if (window.location.pathname === '/') {
                 const animeDiff = scroll - document.getElementById("animeFrame").getBoundingClientRect().top
