@@ -133,6 +133,9 @@
     cursor:pointer;
     text-decoration: none;
 }
+.linkage {
+    display:inline-block;
+}
 #histoFrame, #logoFrame {
     background-color: #aaaaaa
 }
