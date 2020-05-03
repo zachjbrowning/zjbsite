@@ -6,9 +6,11 @@ from django.views.decorators.csrf import ensure_csrf_cookie
 @ensure_csrf_cookie
 def index(request):
     if request.method == 'POST':
-        print(request.POST['name'], request.POST['message'])
-        return JsonResponse({'HEY':'NRUTHAA'})
-    return render(request, 'frontend/index.html')
+        filled = Contact(name=request.POST['name'], email=request.POST['email'], phone=request.POST['phone'], message=request.POST['message'])
+        filled.save()
+        return JsonResponse({'result':"Thank for reaching out! I'll be in touch as soon as I can"})
+    else:
+        return render(request, 'frontend/index.html')
 
 def old(request):
     return render(request, 'old.html')
