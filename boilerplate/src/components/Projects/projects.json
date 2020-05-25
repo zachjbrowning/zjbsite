@@ -1,0 +1,43 @@
+{
+    "items" : [
+        {
+            "name" : "Boilerplate",
+            "info" : {
+                "overview" : "After playing around with react a bit (and halfway through building another website - soon to come!), I decided to consolidate my learnings and create a starter template for developing a react frontend. This included learning the reason for and workings of Babel, Webpack and Express. In a way, it is my own, much more functional version of the template you get from using the create-react-app package.",
+                "date" : "May 2020",
+                "learning-outcomes" : ["Understanding of all requried components to build a react frontend", "Working with Babel, Webpack and Express", "Code splitting and monitoring package sizes", "First departure from Django as a backend, instead using apure JS setup."],
+                "notes" : ["The boilerplate can be found on my github - use it if you want! It is very much oriented to beginner developing for the frontend, with virtually no backend.", "I created this whilst working on a project for my dad. I'm pretty happy with it - using the template I managed to convert this site from Django and proper code splitting in just a few hours!!"]
+            }
+        },
+        
+        {
+            "name" : "This site",
+            "info" : {
+                "overview" : "I originally built my website at the beginning of 2020, as a way to teach myself some web development. Being my first foray into HTML, CSS and JS, I decided it needed redoing so this site is the result of that! It is built with React JS on the front end and Django on the back end.",
+                "date" : "April 2020",
+                "learning-outcomes" : ["Learn how to use React JS", "Work on developing a more appealing UI"],
+                "notes" : ["I am acutely aware of just how slimmed down the UI is! I did this intentionally. I didn't want to spend more than a week rebuilding this site, and I appreciate the big change from the old, more bloated site!", "Using React for the first time was great - the reusability of components is incredible", "The old site used a lot of Bootstrap and JQuery. I tried to work with that a bit less but bootstrap is still present in the nav-bar just because it is too awesome for that type of component!"]
+            }
+        },
+
+        {
+            "name" : "HomeDeliveryHelper",
+            "info" : {
+                "overview" : "When the whole coronavirus thing started to become quite serious, my dad approached me with the idea of creating a site that would enable people who were incapable of leaving the house (elderly, disabled, etc.) to get in contact with people who were willing to help, do things like collect medicine, deliver groceries etc. Although the site was never pushed out to communities, I did get it to a fully deployable state. If we haven't taken it down by now, you can visit it at homedeliveryhelper.org",
+                "date" : "March 2020",
+                "learning-outcomes" : ["Building a working and scalable backend (done using Django)", "Making a working authentication and authorisation interfact (albeit much thanks to Django)", "Designing and building a product based on someone's specification and getting to a deliverable product"],
+                "notes" : ["Because of the scenario in which this was made, getting it ready quickly was really important. I spent four whole days straight building the site", "Due to the incredibly short timeframe, I did not spend much time on the frontend. It is very minimalistic and bootstrappy, which is intentional both because of the build time and the intended use.", "My  main learning curve (and time spent) in this project was around the backend. I had to build a system that kept track of users and their interactions in a database, something I had never done on such a scale before that. Django was very helpful in the implementation of this, but my understanding of the process and requirements on the topic increased tenfold."]
+            }
+        },
+
+        {
+            "name" : "Investbot",
+            "info" : {
+                "overview" : "In 2019 I made a conscious decision to start investing ethically. So I did! My new investments were great, but with one small issue - I couldn't track and look at my historical data... what a great opportunity to try out some automation! My bot logs into my account every night and takes note of the current value of each of my investments. It then saves this data and generates a graph plotting my historical data that I can view.",
+                "date" : "December 2019",
+                "learning-outcomes" : ["Data manipulation and handling", "Webscraping (selenium)", "Small task automation with bash scripts"],
+                "notes" : ["The data manipulation was done using Python", "Funnily enough the webscraping part wasn't the hardest part of this little project - it was the damned x-axis labels on the graph! A whole bunch of issues around the date strings retrieved from the website being in different formats, what happens when a new investment is added, do you have a label for each month, how do you stop them from overlapping... Essentially, a really small and unimportant problem that I spent way too long solving...", "Unfortunately I haven't made the git repo for this project public due to privacy concerns. I enjoyed trying to solve the problem of abstracting away things like login details so they can't be seen but nonetheless I decided not to share it because I don't want my financial situation public for all to see! If you're interested get in contact and I'd be more than happy to explain the bot more."]
+            }
+        }
+    ]
+}

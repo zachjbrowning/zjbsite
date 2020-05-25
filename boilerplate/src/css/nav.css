@@ -48,7 +48,7 @@
     color:#403d39 !important;
     font-size:30px;
 }
-.navbar-brand:hover .logo {
+.navbar-brand:hover .logo, #loader {
     animation: rotate 4s infinite linear;
     stroke:#E65c20;
 }
