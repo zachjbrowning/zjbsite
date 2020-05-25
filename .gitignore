@@ -1,5 +1,5 @@
 node_modules
 dist
-_contacts.json
-_savecontact.js 
-_email.js
+contacts.json
+savecontact.js 
+email.js
