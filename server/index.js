@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.post('/*', (req,res) => {
     res.send({'result' : 'Thanks for reaching out!'});
     save.save(req.body);
-    //notify.notify(req.body);
+    notify.notify(req.body);
 });
 
 //Routing, default sends all urls 
