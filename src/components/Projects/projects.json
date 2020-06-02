@@ -1,6 +1,16 @@
 {
     "items" : [
         {
+            "name" : "Zest Framework",
+            "info" : {
+                "overview" : "This is a framework I worked on developing during my term 1/2 break. My dad wanted me to build a website for him, but I didn't want to always have to check up and work on the site for him. I wanted something that was more friendly to him, but still allowed me to build the more complex aspects of the site. My solution was the Zest framework, which builds pages from JSON files that anyone could write. Check it out at zachjbrowning.tech/zest/",
+                "date" : "June 2020",
+                "learning-outcomes" : ["Creating a frontend that makes calls to a backend to collect information", "Building a framework that fails gracefully, rather than crashing without showing cause for the error", "Getter deeper and deeper into the wonders of React.js!!"],
+                "notes" : ["This is by no means a finished product. I've run out of time to work on it for now but I hope to be able to come back and clean it up and make it into a more useable product."]
+            }
+        },
+        
+        {
             "name" : "Boilerplate",
             "info" : {
                 "overview" : "After playing around with react a bit (and halfway through building another website - soon to come!), I decided to consolidate my learnings and create a starter template for developing a react frontend. This included learning the reason for and workings of Babel, Webpack and Express. In a way, it is my own, much more functional version of the template you get from using the create-react-app package.",
