@@ -105,6 +105,10 @@
 }
 #histo-mask-shadow {
     box-shadow: 0 0 10px 10px #424241;
+    transition: 0.25s ease-in-out; 
+}
+#histo-mask:hover #histo-mask-shadow   {
+    box-shadow: 0 0 15px 6px #424241;
 }
 #histo-parallax {
     position:absolute;  

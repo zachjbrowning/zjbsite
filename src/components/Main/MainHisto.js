@@ -62,9 +62,9 @@ export default function MainHisto() {
                 <H5 id="H5"/>
             </div>
             <div id="histo-mask">
+                <a id="histo-mask-shadow" href="/oldsite"></a>
             </div>
-            <a id="histo-mask-shadow" href="/oldsite">
-            </a>
+            
             <div className="histo-title welcome">
                 history...
             </div>
