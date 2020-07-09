@@ -15,7 +15,7 @@
             "info" : {
                 "overview" : "After playing around with react a bit (and halfway through building another website - soon to come!), I decided to consolidate my learnings and create a starter template for developing a react frontend. This included learning the reason for and workings of Babel, Webpack and Express. In a way, it is my own, much more functional version of the template you get from using the create-react-app package.",
                 "date" : "May 2020",
-                "learning-outcomes" : ["Understanding of all requried components to build a react frontend", "Working with Babel, Webpack and Express", "Code splitting and monitoring package sizes", "First departure from Django as a backend, instead using apure JS setup."],
+                "learning-outcomes" : ["Understanding of all requried components to build a react frontend", "Working with Babel, Webpack and Express", "Code splitting and monitoring package sizes", "First departure from Django as a backend, instead using a pure JS setup."],
                 "notes" : ["The boilerplate can be found on my github - use it if you want! It is very much oriented to beginner developing for the frontend, with virtually no backend.", "I created this whilst working on a project for my dad. I'm pretty happy with it - using the template I managed to convert this site from Django and proper code splitting in just a few hours!!"]
             }
         },
