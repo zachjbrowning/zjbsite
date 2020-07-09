@@ -48,7 +48,7 @@ class ContactHome extends Component {
                         <form id="contact-form" className="contact-form" onSubmit={this.submitForm}>
                             <input type="text" maxLength={150} required={true} placeholder="name" name="name"/>
                             <input type="email" required={true} placeholder="email" name="email"/>
-                            <input type="text" maxLength={15} placeholder="phone" name="phone"/>
+                            <input type="text" required={true} maxLength={15} placeholder="phone" name="phone"/>
                             <textarea required={true} maxLength={2000} rows="4" placeholder="message" name="message"/>
                             <button>SUBMIT</button>
                         </form>

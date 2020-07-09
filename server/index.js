@@ -26,8 +26,16 @@ app.get('/oldsite', (req,res) => {
 app.use(bodyParser.urlencoded({extended:true}));
 app.post('/*', (req,res) => {
     res.send({'result' : 'Thanks for reaching out!'});
-    save.save(req.body);
-    notify.notify(req.body);
+    if ("name" in req.body && "email" in req.body && "phone" in req.body && "message" in req.body) {
+        toSave = {
+            name : req.body.name,
+            email : req.body.email,
+            phone : req.body.phone,
+            message : req.body.message,
+        }
+        save.save(toSave);
+    }
+    //notify.notify(req.body);
 });
 
 //Routing, default sends all urls 
