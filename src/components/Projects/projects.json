@@ -1,6 +1,16 @@
 {
     "items" : [
         {
+            "name" : "REACTion time",
+            "info" : {
+                "overview" : "A little web app I made using React Made this cause I was bored and wanted to play around with React a bit. Have a go at zachjbrowning.tech/reaction/ Next time I'm bored I'll add some more minigames it!",
+                "date" : "July 2020",
+                "learning-outcomes" : ["React, react, react", "Backend frontend interactions"],
+                "notes" : ["Not much to say... other than visit it, see for yourself and try get a high score!!"]
+            }
+        },
+        
+        {
             "name" : "Pantry Pirate",
             "info" : {
                 "overview" : "For a course at university, we had to develop and deliver a fully functioning web app. Our project was around creating a recipe website that let you explore for recipes based on the ingredients that you had. Our result was 'Pantry Pirate'. I worked mostly on the frontend, together with one of my peers Tom Hill. It genuinely was good fun building a system much more complex than one I had built before, and building out a library of functions and API's to aid our app. My main work and what I am proud of the most was around the redux state management and the dynamic nature of the site that occured as a result. I also did a lot of pure frontend work on the JS/CSS dynamic styling. We used Bulma as an SCSS framework, which was also a good learning experience for me!",
