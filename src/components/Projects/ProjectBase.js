@@ -1,4 +1,6 @@
 import React from 'react'
+import parse from "../../../lib/parser";
+
 
 export default function ProjectBase(props) {
     
@@ -9,19 +11,19 @@ export default function ProjectBase(props) {
             </div>
             <div className="proj">
                 <span className="proj-subtitle">Overview<br/></span>
-                {props.info['overview']}
+                {parse(props.info['overview'])}
             </div>
             <div className="proj">
                 <span className="proj-subtitle">Learning outcomes<br/></span>
                 <ul>
-                    {props.info['learning-outcomes'].map((out, index) => <li key={index}>{out}</li>)}
+                    {props.info['learning-outcomes'].map((out, index) => <li key={index}>{parse(out)}</li>)}
                 </ul>
             </div>
             {props.extra}
             <div className="proj">
                 <span className="proj-subtitle">Notes<br/></span>
                 <ul>
-                    {props.info['notes'].map((out, index) => <li key={index}>{out}</li>)}
+                    {props.info['notes'].map((out, index) => <li key={index}>{parse(out)}</li>)}
                 </ul>
             </div>
         </div>

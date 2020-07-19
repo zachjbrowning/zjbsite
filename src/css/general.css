@@ -13,7 +13,12 @@ html, body {
 .check {
     background-color:red;
 }
-
+.parsed-link {
+    color:#E65c20;
+}
+.parsed-link:hover {
+    color:#763CA0;
+}
 .main-hover {
     color: #403d39;
 }
