@@ -3,25 +3,25 @@
         {
             "name" : "REACTion time",
             "info" : {
-                "overview" : ["A little web app I made using React Made this cause I was bored and wanted to play around with React a bit. Have a go at it ", "<a=https://zachjbrowning.tech/reaction/>here", ". Next time I'm bored I'll add some more minigames it!"],
+                "overview" : ["A little web app I made using React Made this cause I was bored and wanted to play around with React a bit. Have a go at it ", "<a=https://zachjbrowning.tech/reaction/>here", ". Next time I'm bored I'll add some more minigames to it!"],
                 "date" : "July 2020",
-                "learning-outcomes" : [["React, react, react"], ["Backend frontend interactions"]],
-                "notes" : [["Not much to say... other than visit it, see for yourself and try get a high score!!"]]
+                "learning-outcomes" : [["React, react, react"], ["Backend frontend interactions"], ["JS async function overkill"]],
+                "notes" : [["Mostly... visit it, see for yourself and try get a high score!!"], ["I like the minimal theme on this one"]]
             }
         },
         {
             "name" : "Pantry Pirate",
             "info" : {
-                "overview" : ["For a course at university, we had to develop and deliver a fully functioning web app. Our project was around creating a recipe website that let you explore for recipes based on the ingredients that you had. Our result was 'Pantry Pirate'. I worked mostly on the frontend, together with one of my peers Tom Hill. It genuinely was good fun building a system much more complex than one I had built before, and building out a library of functions and API's to aid our app. My main work and what I am proud of the most was around the redux state management and the dynamic nature of the site that occured as a result. I also did a lot of pure frontend work on the JS/CSS dynamic styling. We used Bulma as an SCSS framework, which was also a good learning experience for me!"],
+                "overview" : ["For a course at university, we had to develop and deliver a fully functioning web app. Our project was around creating a recipe website that let you explore for recipes based on the ingredients that you had. Our result was 'Pantry Pirate'. I worked mostly on the frontend. It genuinely was good fun building a system much more complex than one I had built before, and building out a library of functions and API's to aid our app. My main work and what I am proud of the most was around the redux state management and the dynamic nature of the site that occured as a result. I also did a lot of pure frontend work on the JS/SCSS dynamic styling. We used Bulma as an SCSS framework, which was also a good learning experience for me having only done CSS before that!"],
                 "date" : "July 2020",
-                "learning-outcomes" : [["Worked in an agile environment, with team members operating on different aspects of the project"], ["Built a complete, deployable product", "Learnt a lot more about redux"], ["Dealt a lot with interactions between frontend and backend, and the asynchronous nature of that interaction"]],
+                "learning-outcomes" : [["Worked in an agile environment, with team members operating on different aspects of the project"], ["Built a complete, deployable product"], ["Learnt a lot more about redux"], ["Dealt a lot with interactions between frontend and backend, and the asynchronous nature of that interaction"], ["SCSS modules!"]],
                 "notes" : [["Sadly, this was a group project for a uni course so the git repository is not public. I might get it up and running on this websites server sometime though so you can have a look!!"]]
             }
         },
         {
             "name" : "Zest Framework",
             "info" : {
-                "overview" : ["This is a framework I worked on developing during my term 1/2 break. My dad wanted me to build a website for him, but I didn't want to always have to check up and work on the site for him. I wanted something that was more friendly to him, but still allowed me to build the more complex aspects of the site. My solution was the Zest framework, which builds pages from JSON files that anyone could write. Check it out ", "<a=zachjbrowning.tech/zest/>here."],
+                "overview" : ["This is a framework I worked on developing during my term 1/2 break. My dad wanted me to build a website for him, but I didn't want to always have to check up and work on the site for him. I wanted something that was more friendly to him, but still allowed me to build the more complex aspects of the site. My solution was the Zest framework, which builds pages from JSON files that anyone could write. Check it out ", "<a=https://zachjbrowning.tech/zest/>here."],
                 "date" : "June 2020",
                 "learning-outcomes" : [["Creating a frontend that makes calls to a backend to collect information"], ["Building a framework that fails gracefully, rather than crashing without showing cause for the error"], ["Getter deeper and deeper into the wonders of React.js!!"]],
                 "notes" : [["This is by no means a finished product. I've run out of time to work on it for now but I hope to be able to come back and clean it up and make it into a more useable product."],["This project was inspired by building this website and using a json file to produce this exact page. Every time I add a project, I just edit the json file. The parser I built for that has found its way to here, letting me add html-ish stuff like ", "<a=https://zachjbrowning.tech/>links,", "<b> bold,", " and ", "<i> italics."]]
