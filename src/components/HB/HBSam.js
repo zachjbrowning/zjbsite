@@ -7,12 +7,13 @@ import "../../styles/styles.scss";
 
 export default function HBSam() {
     const [url, setUrl] = useState(false);
-    
+    const [loading, setLoading] = useState(false);
     
     const getNew = (text0, text1) => {
         const data = new URLSearchParams()
         data.append('text0', text0)
         data.append('text1', text1)
+        setLoading(true);
         const options = {
             method: 'POST',
             mode: 'same-origin',
@@ -25,6 +26,7 @@ export default function HBSam() {
         fetch('meme', options)
         .then(res => res.json()).then(res => {
             setUrl(res.data.url);
+            setLoading(false);
         })
         .catch(res => console.log(res))
         
@@ -51,8 +53,12 @@ export default function HBSam() {
                             <div>
                                 <a onClick={() => setUrl(false)}>Close</a>
                             </div>
+                        </div> : 
+                        loading ? <div className="field">
+                            <div className="control">
+                                <progress className={`${styles.prog} progress is-primary is-medium`} />
+                            </div>
                         </div> : <>
-
                             <p>Fill out this form for your birthday present</p>
                             <div className={styles.formage}>
                                 <form onSubmit={meme}>
