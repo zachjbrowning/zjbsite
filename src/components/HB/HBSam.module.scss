@@ -1,0 +1,41 @@
+.cover {
+    position: absolute;
+    top:0;
+    width:100vw;
+    height:100vh;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    display:flex;
+    height:100%;
+    @media (min-width: 768px) {
+        width: 700px;
+    }
+    @media (min-width: 992px) {
+        width: 900px;
+    }
+    @media (min-width: 1200px) {
+        width: 1000px;
+    }
+    .box {
+        justify-content: center;
+        display:flex;
+        flex-wrap:wrap;
+        & > form, & > p {
+            flex-grow : 1;
+            flex-basis:100%;
+            display:flex;
+            justify-content: center;
+        }
+    }
+}
+
+.formage {
+
+}
