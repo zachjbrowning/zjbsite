@@ -1,6 +1,9 @@
 var notify = require('./email');
 var save = require('./savecontact');
 
+var axios = require('axios');
+
+
 
 const express = require('express');
 const path = require('path'); 
@@ -24,6 +27,28 @@ app.get('/oldsite', (req,res) => {
 
 //Saving form and sending result
 app.use(bodyParser.urlencoded({extended:true}));
+app.post('/meme', (req, res) => {
+    axios({
+        method : 'POST',
+        url : "https://api.imgflip.com/caption_image",
+        headers : {
+            "content-type": "application/json",
+            "Access-Control-Allow-Origin" : "*",
+            
+        },
+        params : {
+            template_id : 181913649,
+            username : "mbappek",
+            password : "password",
+            text0 : req.body.text0,
+            text1 : req.body.text1,
+        }
+    }).
+    then(it => {
+        res.send(it.data);
+    })
+    .catch(it => res.send(it));
+})
 app.post('/*', (req,res) => {
     res.send({'result' : 'Thanks for reaching out!'});
     if ("name" in req.body && "email" in req.body && "phone" in req.body && "message" in req.body) {
@@ -37,6 +62,9 @@ app.post('/*', (req,res) => {
     }
     //notify.notify(req.body);
 });
+
+
+
 
 //Routing, default sends all urls 
 app.get('/*', (req,res) => {

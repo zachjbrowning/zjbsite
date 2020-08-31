@@ -6,30 +6,35 @@ import "../../styles/styles.scss";
 
 
 export default function HBSam() {
-    const [url, setUrl] = useState(false)
+    const [url, setUrl] = useState(false);
     
-    const instance = axios.create({
-        baseURL : "https://api.imgflip.com/caption_image",
-        header: {
-            "content-type": "application/json",
-          },
-    })
     
-    const getNew = async (text0, text1) => {
-        let res = await instance.post("/", {
-            template_id : 181913649,
-            username : "mbappek",
-            password : "password",
-            text0 : text0,
-            text1 : text1,
+    const getNew = (text0, text1) => {
+        const data = new URLSearchParams()
+        data.append('text0', text0)
+        data.append('text1', text1)
+        const options = {
+            method: 'POST',
+            mode: 'same-origin',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type':  'application/x-www-form-urlencoded',
+            },
+            body : data,
+        }
+        fetch('meme', options)
+        .then(res => res.json()).then(res => {
+            setUrl(res.data.url);
         })
-        console.log(res.data);
+        .catch(res => console.log(res))
+        
     }
     
     function meme(e) {
         e.preventDefault();
-        console.log(e.target.elements.text0.value, e.target.elements.text1.value);
-        setUrl("YEET");
+        getNew(e.target.elements.text0.value, e.target.elements.text1.value);
+        e.target.elements.text0.value = "";
+        e.target.elements.text1.value = "";
     }
     
     
@@ -39,10 +44,14 @@ export default function HBSam() {
                 <div className={styles.box}>
                     <p className="title is-3">HB SPAM</p>
                     {
-                        url ? <>
-
-                            <a onClick={() => setUrl(false)}>Close</a>
-                        </> : <>
+                        url ? <div className={styles.result}>
+                            <div className={styles.img}>
+                                <img alt="be patient, image will load" src={url} />
+                            </div>
+                            <div>
+                                <a onClick={() => setUrl(false)}>Close</a>
+                            </div>
+                        </div> : <>
 
                             <p>Fill out this form for your birthday present</p>
                             <div className={styles.formage}>
@@ -50,13 +59,13 @@ export default function HBSam() {
                                     <div className="field">
                                         <div className="control">
                                             <label className="label">what you want for your bday</label>
-                                            <input name="text0" placeholder="..." required={true} type="text" />
+                                            <input className="input" name="text0" placeholder="..." required={true} type="text" />
                                         </div>
                                     </div>
                                     <div className="field">
                                         <div className="control">
-                                        <label className="label">"What you're probably gonna get</label>
-                                            <input name="text1" placeholder="..." required={true} type="text" />
+                                        <label className="label">What you're probably gonna get</label>
+                                            <input className="input" name="text1" placeholder="..." required={true} type="text" />
                                         </div>
                                     </div>
                                     <div className="field">
